@@ -1,0 +1,214 @@
+/*-------------------------
+#.header area
+--------------------------*/
+.header-area {
+    .top-bar {
+        padding: 2.2rem 0;
+        background: var(--bgone);
+        .contact-info {
+            margin: 0;
+            padding: 0;
+            li {
+                display: inline-block;
+                position: relative;
+                list-style: none;
+                margin-right: 4.5rem;
+                &:before {
+                    position: absolute;
+                    content: "";
+                    width: 1px;
+                    height: 3rem;
+                    background: var(--border-color);
+                    left: calc(100% + 25px);
+                    top: 0;
+                }
+                &:last-child {
+                    margin-right: 0;
+                    &:before {
+                        display: none;
+                    }
+                }
+                a {
+                    display: flex;
+                    align-items: center;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    color: var(--bColor);
+                    i {
+                        font-size: 2rem;
+                        margin-right: 1.3rem;
+                        line-height: 1;
+                    }
+                }
+            }
+        }
+        .social-area {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            li {
+                display: inline-block;
+                list-style: none;
+                margin-right: 2.5rem;
+                &:last-child {
+                    margin-right: 0;
+                }
+                a {
+                    font-size: 1.8rem;
+                    color: var(--bColor);
+                    transition: $transition;
+                    &:hover {
+                        color: var(--primary-color);
+                    }
+                }
+            }
+        }
+        .search-area {
+            display: inline-block;
+            margin-left: 3rem;
+            .search-wrap {
+                position: relative;
+                .search-input {
+                    width: 13.5rem;
+                    height: 3rem;
+                    border: none;
+                    border-left: 1px solid var(--border-color);
+                    padding: .5rem 1.5rem;
+                    font-family: $bodyFont;
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                    color: var(--bColor);
+                    background: transparent;
+                }
+                .search-btn {
+                    position: absolute;
+                    right: 0;
+                    top: .5rem;
+                    padding: 0;
+                    border: none;
+                    background: transparent;
+                    color: var(--color-one);
+                    transition: $transition;
+                    &:hover {
+                        color: var(--primary-color);
+                    }
+                }
+            }
+        }
+    }
+    .header-bottom {
+        padding: 1.6rem 0;
+        background: var(--white);
+        .navbar {
+            padding: 0;
+            ul {
+                margin: 0;
+                padding: 0;
+                li {
+                    list-style: none;
+                    margin-right: 2.5rem;
+                    a {
+                        font-family: $bodyFont;
+                        font-size: 1.5rem;
+                        font-weight: 400;
+                        text-transform: capitalize;
+                        color: var(--bColor);
+                        transition: $transition;
+                        &:hover {
+                            color: var(--primary-color);
+                        }
+                    }
+                    &.current-menu-item {
+                        a {
+                            color: var(--primary-color);
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .header-btn {
+        display: inline-block;
+        padding: 1rem 2.5rem;
+        background: var(--primary-color);
+        border-radius: .5rem;
+        font-family: $bodyFont;
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: var(--white);
+        transition: $transition;
+        &:hover {
+            color: var(--white);
+            background: var(--hover-color);
+        }
+    }
+}
+/*-------------------------
+sticky header
+--------------------------*/
+.header-area{
+    .stick{
+        position:fixed;
+        top:0px;
+        left:0;
+        right:0;
+        width:100%;
+        z-index: 9999;
+        background:var(--white);
+        transition: all .5s linear;
+        box-shadow: 15px 0 30px rgba(0, 0, 0, .2);
+    }
+}
+
+@media (max-width: 1199px) {
+    .navbar-light .navbar-brand {
+        width: 120px;
+    }
+    .header-area .header-bottom .navbar ul li {
+        margin-right: 1.5rem;
+    }
+    .header-area .header-btn {
+        padding: 1rem 2rem;
+        font-size: 1.4rem;
+    }
+    .header-area .header-bottom .navbar ul li a {
+        font-size: 1.4rem;
+    }
+    .header-area .top-bar .contact-info li a {
+        font-size: 1.4rem;
+    }
+    .header-area .top-bar .contact-info li {
+        margin-right: 2.5rem;
+    }
+    .header-area .top-bar .contact-info li::before {
+        height: 2.5rem;
+        left: calc(100% + 15px);
+    }
+    .header-area .top-bar .contact-info li a i {
+        font-size: 1.6rem;
+        margin-right: .5rem;
+    }
+    .header-area .top-bar .social-area li {
+        margin-right: 1rem;
+    }
+    .header-area .top-bar .social-area li a {
+        font-size: 1.4rem;
+    }
+}
+@media (max-width: 767px) {
+    .header-area .top-bar .contact-info li::before {
+        display: none;
+    }
+}
+@media (max-width: 375px) {
+    .header-area .top-bar .contact-info li {
+        margin-right: 10px;
+    }
+}
+@media (max-width: 320px) {
+    .header-area .top-bar .contact-info li {
+        margin-right: 0;
+    }
+}

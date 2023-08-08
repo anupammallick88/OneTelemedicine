@@ -1,0 +1,703 @@
+.cus-bg-img {
+    background-image: url('../assets/images/breadcrumb.png');
+}
+
+.cus-bg-user-img {
+    background-image: url('../user/images/breadcrumb.png');
+}
+
+.primary-table .action-area li .cus-w100-pointer {
+    width:100px;
+    cursor:pointer;
+}
+
+.primary-form .profile-image-area .profile-image img.cus-doctor-img-edit {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+
+.primary-table .action-area li .cus-w100 {
+    width:100px;
+}
+
+.cus-pl0 {
+    padding-left: 0;
+}
+
+.cus-pdf-w100 {
+    width:100px;
+}
+
+.section-title .cus-category-name {
+    font-size: 3rem;
+    color: #081839;
+}
+.sidebar-widget .contact-widget .media-body h4 {
+    color: var(--color-one);
+}
+.sidebar-widget .contact-widget .media-body span {
+    color: var(--color-one);
+}
+.sidebar-widget .contact-widget .icon {
+	padding-right: 1.5rem;
+	border-right: 1px solid var(--color-one);
+}
+.sidebar-widget .contact-widget .icon i {
+    color: var(--color-one);
+}
+
+/* -------------------------------------
+    My Extra CSS Starts From Here
+----------------------------------------*/
+
+/* Language CSS Start */
+.header-area .header-bottom .navbar .language-dropdown button {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--bColor);
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    border: none;
+    background-color: transparent;
+    height: 100%;
+}
+.language-dropdown .dropdown-item.active, .language-dropdown .dropdown-item:active {
+    background-color: transparent;
+}
+@media only screen and (max-width:991px) {
+    li.dropdown.language-dropdown {
+        margin-bottom: 10px;
+    }
+}
+/* Language CSS End */
+
+/* See Details on Table css Start*/
+.create-link-btn .prescription-btn {
+    min-width: 150px;
+    text-align: center;
+    margin-left: 15px;
+}
+.show-details-content td {
+    border-bottom: none!important;
+    padding: 0!important;
+}
+.show-details-content td .collapse {
+    border-bottom: 1px solid #FFFFFF;
+}
+.show-icon {
+    font-size: 14px;
+    background-color: var(--hover-color)!important;
+    color: #fff!important;
+}
+.show-icon i {
+    transition: ease all 0.18s;
+    transform:rotate(-180deg)
+}
+.show-icon.collapsed i {
+    transform:rotate(0deg)
+}
+
+.show-details-content .card-body {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem;
+}
+.show-icon.btn.focus, .show-icon.btn:focus {
+    background-color: transparent;
+}
+.action-btn-wrap {
+    display: flex;
+    align-items: center;
+}
+.show-details-content-item {
+    margin: 10px 0;
+}
+.show-details-content-item span {
+    font-weight: 500;
+    color: #000;
+    margin-left: 10px;
+}
+
+/* See Details on Table css End */
+
+/* Common Modal CSS Start */
+.common-modal .modal-content {
+    border: none;
+    border-radius: 14px;
+    overflow: hidden;
+}
+.common-modal .modal-title {
+    color: #000000;
+    font-weight: 400;
+    font-size: 18px;
+}
+.common-modal .modal-header {
+    /* padding: 1rem 2rem; */
+}
+.common-modal .modal-header {
+    border-bottom: none;
+    padding: 2rem 2rem;
+    background-color: #F7F7F7;
+    min-height: 54px;
+    align-items: center;
+}
+
+
+.common-modal .modal-body {
+    padding: 2rem;
+}
+.close {
+    font-size: 3rem;
+    font-weight: 600;
+}
+.direction-rtl .common-modal {
+    text-align: right;
+}
+.direction-rtl .modal-header .close {
+    margin: -1rem auto -1rem -1rem;
+}
+.direction-rtl .modal-footer {
+    justify-content: flex-start;
+}
+/* Create Meeting Modal */
+.create-meeting-info {
+    color: #000;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: #F7F7F7;
+    border-radius: 9px;
+    min-height: 42px;
+    padding: 14px 17px;
+    overflow-wrap: break-word;
+}
+.common-modal .modal-footer {
+    padding: 0 2rem 2rem;
+    border-top: 0;
+    justify-content: flex-start;
+}
+
+.create-meeting-info:not(:last-child) {
+    margin-bottom: 10px;
+}
+.create-meeting-info span {
+    color: var(--primary-color);
+}
+.create-meeting-modal .modal-footer .btn {
+    padding: 8px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+.common-modal .close {
+    color: #989898;
+    opacity: 1;
+    font-weight: 400;
+}
+/* Create/Make Meeting Disabled Btn */
+.disabled-btn {
+    background: #ddd!important;
+    color: #333!important;
+}
+.primary-table .prescription-btn {
+    border: none;
+    border-radius: 4px;
+}
+/* Common Modal CSS End */
+
+/* Patient Dashboard Start */
+.select-offline-payment-img img {
+    height: 100px;
+}
+.delete-button {
+    font-size: 14px;
+    background-color: #F6563F;
+    color: #fff;
+}
+.action-btn-wrap .common-tbl-btn.delete-button:hover {
+    background-color: #dc3545!important;
+}
+.action-btn-wrap .common-tbl-btn {
+    margin: 0 5px;
+    /* border: none; */
+}
+.action-btn-wrap .common-tbl-btn:hover {
+    color: #fff;
+    background-color: var(--primary-color)!important;
+}
+
+/* Create, View New BG Color Style Start */
+.common-tbl-btn {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    color: var(--white);
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    border-radius: 4px;
+    border: 1px solid transparent;
+}
+.create-button {
+    background-color: #F58838;
+    color: #fff!important;
+}
+.view-button {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+/* Create, View New BG Color Style End */
+
+
+/* Patient Dashboard End */
+
+/* Language LTR/RTL CSS Start */
+.direction-rtl {
+    direction: rtl;
+}
+.direction-ltr {
+    direction: ltr;
+}
+
+/* Slider Area */
+.hero-area-content {
+    width: 52%;
+    margin-right: auto;
+}
+.direction-rtl .hero-banner-area .primary-btn-outline {
+    margin-right: 2.5rem;
+    margin-left: 0;
+}
+.direction-rtl .footer-logo {
+    text-align: right;
+}
+.direction-rtl .footer-area .widget-area .galley-widget ul {
+    flex-direction: row-reverse;
+}
+.direction-rtl .footer-area .widget-area .text-widget ul li i {
+    margin-left: 2rem;
+}
+.direction-rtl .footer-area .widget-area .text-widget ul li {
+    justify-content: flex-end;
+}
+/* Sign In Page */
+.direction-rtl .register-form .form-check .form-check-label {
+    padding-left: 0;
+    padding-right: 2rem;
+}
+.direction-rtl .register-form .form-group .form-control {
+    padding-left: 1rem;
+    padding-right: 5rem;
+}
+.direction-rtl .register-form .form-group .form-icon {
+    right: 2rem;
+    left: auto;
+}
+.direction-rtl .register-area .register-wrap {
+    padding-right: 0;
+    padding-left: 3rem;
+}
+.direction-rtl .topbar-right {
+    text-align: left!important;
+}
+.direction-rtl .header-area .top-bar .social-area li:last-child {
+    margin-right: 2.5rem;
+}
+.direction-rtl .topbar-left {
+    text-align: right!important;
+}
+.direction-rtl .header-area .top-bar .contact-info li a i {
+    margin-right: 0;
+    margin-left: 1.3rem;
+}
+.direction-rtl .header-area .top-bar .contact-info li {
+    margin-right: 0;
+    margin-left: 4.5rem;
+}
+.direction-rtl .header-area .top-bar .contact-info li:before {
+    left: auto;
+    right: calc(100% + 25px);
+}
+.direction-rtl .single-grid-blog .blog-info .blog-meta .author-info .author-image {
+    margin-right: 0;
+    margin-left: 1.5rem;
+}
+.pagination .pagination-wrap {
+    padding: 0;
+}
+.pagination .pagination-wrap li {
+    width: auto;
+    padding: 1rem 2rem;
+}
+/* Dashboard css */
+.direction-rtl #apptime {
+    padding: 1rem 4rem;
+}
+.direction-rtl .new-appointment-form .form-progres-step .step:before {
+    left: auto;
+}
+.direction-rtl .new-appointment-form .form-group .form-control {
+    padding: 1rem 5rem 1rem 2rem;
+}
+/* Patient Dashboard Start */
+.direction-rtl .section-header .tab-menu .nav-tabs .nav-item .nav-link i {
+    margin-right: 0;
+    margin-left: .5rem;
+}
+.direction-rtl .primary-table .user-info .user-image {
+    margin-right: 0;
+    margin-left: 8px;
+}
+.direction-rtl .section-inner-header .appoinment-search .date-input .form-control {
+    padding: 1rem 6rem 1rem 1rem;
+}
+.direction-rtl .section-inner-header .appoinment-search .search-input {
+    position: relative;
+    margin-right: 0;
+    margin-left: 2rem;
+}
+.direction-rtl .new-appointment-form .dectors-service-list .form-check .form-check-label {
+    /* cursor: pointer; */
+    padding-left: 0;
+    padding-right: 1.8rem;
+}
+.direction-rtl .patient-dashboard-page .new-appointment-form .form-group .form-control {
+    padding: 1rem 2rem 1rem 2rem;
+}
+.direction-rtl .patient-dashboard-page .new-appointment-form .form-title {
+    text-align: right;
+}
+.direction-rtl .patient-dashboard-page .new-appointment-form #StripeCollapse .form-group .form-control {
+    padding: 1rem 5rem 1rem 2rem;
+}
+.direction-rtl .patient-dashboard-page .new-appointment-form .team-overlay .form-check .form-check-label {
+    padding-left: 0;
+    padding-right: 2rem;
+}
+.direction-rtl .section-heading-area .section-title, .direction-rtl .profile-area .profile-left form, .direction-rtl .profile-thumbnail, .direction-rtl .profile-info,
+.direction-rtl .edite-profile-area .primary-form .form-inner-title, .direction-rtl .edite-profile-area .primary-form {
+    text-align: right;
+}
+.direction-rtl .profile-area .profile-top .profile-btn i {
+    margin-right: 0;
+    margin-left: 5px;
+}
+.direction-rtl .edite-profile-area .primary-form .gender-group .form-check .form-check-label {
+    padding-left: 0;
+    padding-right: 2rem;
+}
+.direction-rtl .create-link-btn .prescription-btn {
+    margin-left: 0;
+    margin-right: 15px;
+}
+.direction-rtl .show-details-content td {
+    text-align: right;
+}
+.direction-rtl .prescription-area {
+    text-align: right;
+}
+.direction-rtl .prescription-top {
+    text-align: right;
+}
+.direction-rtl .prescriptionmodal .close {
+    right: auto;
+    left: 5px;
+}
+.direction-rtl .prescription-footer {
+    text-align: left!important;
+}
+.direction-rtl .select-offline-payment-img {
+    /* float: right; */
+}
+.direction-rtl #new-appointment-form {
+    text-align: right;
+}
+.direction-rtl .generate-default-password .form-check-label {
+    margin-right: 22px;
+}
+/* Patient Dashboard End */
+
+/* Contact page */
+.direction-rtl .contact-area .address-ara .support-area h3 i {
+    margin-right: 0;
+    margin-left: 1rem;
+}
+.direction-rtl .new-appointment-form .dectors-service-list .form-check .form-check-label {
+    padding-left: 0;
+    padding-right: 1.8rem;
+}
+/* News Page */
+.direction-rtl .blog-details-area .post-meta-wrap .blog-meta .author-info .author-image {
+    margin-right: 0;
+    margin-left: 1.5rem;
+}
+.direction-rtl .blog-details-area .post-meta-wrap .social-share ul li:last-child {
+    margin-right: 2rem;
+}
+.direction-rtl .comment-form .form-group {
+    text-align: right;
+}
+.direction-rtl .comment-form .form-title, .direction-rtl .comment-area .comment-title {
+    text-align: right;
+}
+
+.direction-rtl #comment-form, .direction-rtl .blog-details-area p, .direction-rtl .blog-details-area .post-title, .direction-rtl .blog-details-area .post-inner-text, .direction-rtl .blog-details-area .post-tag {
+    text-align: right;
+}
+.direction-rtl .blog-details-area .post-tag ul li {
+    margin-right: 0;
+    margin-left: 2rem;
+}
+
+/* Doctor Dashboard Start */
+
+/* .doctor-dashboard-area .form-control { */
+.add-stuff-bottom .input-group {
+    height: 52px;
+    border-radius: 12px;
+    border: none;
+    font-size: 16px;
+    /* padding: 1.5rem; */
+    background-color: #fff;
+    padding-left: 1.5rem;
+}
+.add-stuff-bottom .form-control {
+    height: 52px;
+    /* border-radius: 12px!important; */
+    border: none;
+    font-size: 16px;
+    padding: 0;
+    border-top-right-radius: 12px!important;
+    border-bottom-right-radius: 12px!important;
+}
+.add-stuff-bottom textarea {
+    padding: 1.5rem!important;
+    min-height: 65px;
+    height: 105px;
+    width: 100%;
+    border: none;
+    border-radius: 9px;
+}
+/* Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #fff inset !important;
+    /* background-color: #fff!important; */
+}
+.add-stuff-bottom .input-group i {
+    height: 100%;
+    position: relative;
+    top: 18px;
+    margin-right: 11px;
+}
+.generate-default-password {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+.generate-default-password .form-check-input {
+    margin-top: 0;
+}
+.generate-default-password .form-check-label {
+    margin-bottom: 0;
+    margin-left: 7px;
+}
+.add-stuff-area form button {
+    padding: 1rem 1.7rem;
+    font-size: 14px;
+    margin-top: .75rem;
+    border-radius: 10px;
+}
+
+/* Doctor Dashboard RTL */
+.direction-rtl .doctor-dashboard-area .primary-table .table thead tr th, .direction-rtl .doctor-dashboard-area .primary-table .table tbody tr td {
+    text-align: right;
+}
+.direction-rtl .primary-table .user-info .user-name {
+    margin-right: 0;
+    margin-left: 35px;
+}
+.direction-rtl .add-stuff-bottom .input-group i {
+    margin-right: 11px;
+    margin-left: 11px;
+}
+.direction-rtl .prescription-area .test-repot ul li > span {
+    margin-right: 20px;
+}
+.direction-rtl .prescription-area .test-repot ul li:before {
+    left: auto;
+    right: 0;
+}
+.direction-rtl .prescription-area .advice-list-area ul li:before {
+    left: auto;
+    right: 0;
+}
+.direction-rtl .prescription-area .advice-list-area ul li span {
+    margin-right: 20px;
+}
+/* Doctor Dashboard End */
+
+/* Home Page start */
+.direction-rtl .hero-banner-area .alert-text {
+    text-align: right;
+}
+.direction-rtl .about-area .features-lsit .single-feature .icon {
+    margin-right: 0;
+    margin-left: 1.5rem;
+}
+.direction-rtl .hero-banner-area .alert-area .alert .alert-text .icon {
+    margin-right: 0;
+    margin-left: 2rem;
+}
+.direction-rtl .about-info, .direction-rtl .counter-area .single-counter, .direction-rtl .single-service .service-info, .direction-rtl .single-testimonial .testimonial-info,
+.direction-rtl .single-grid-blog .blog-info, .direction-rtl .single-testimonial, .direction-rtl .service-details-area {
+    text-align: right;
+}
+.direction-rtl .counter-area .single-counter .icon {
+    margin-right: 0;
+    margin-left: 1.5rem;
+}
+.direction-rtl .single-grid-blog .blog-info .blog-meta li {
+    margin-right: 0;
+    margin-left: 2.5rem;
+}
+.direction-rtl .single-testimonial .clint-info .testimonial-image {
+    margin-right: 0;
+    margin-left: 2rem;
+}
+/* About Page end */
+
+@media (max-width: 991px) {
+    .hero-area-content {
+        width: 73%;
+    }
+    .section-title {
+        width: 100%;
+    }
+    .direction-rtl .blog-details-area .post-meta-wrap .blog-meta {
+        text-align: right;
+    }
+}
+/* Language LTR/RTL CSS End */
+
+/* -------------------------------------
+    My Extra CSS End Here
+----------------------------------------*/
+.form-control:disabled, .form-control[readonly] {
+     background-color: transparent;
+    opacity: 1;
+}
+
+.section-heading-area-dashboard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-warning {
+    color: #d3a10d !important;
+}
+
+.primary-table .table tbody tr td {
+    padding: 1.6rem 0;
+}
+
+.create-meeting-info-button {
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 9px;
+    min-height: 42px;
+    padding: 14px 17px;
+    overflow-wrap: break-word;
+}
+
+.dashboard-box .single-box.report-box {
+    background-color: #06BF9E;
+}
+.dashboard-box .single-box.report-box .counter-title {
+    color: #ffffff;
+}
+.no-appoint-bg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+    background-color: #fffdfb;
+    background-image: url('../../uploaded_file/pattern.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.no-appoint-bg .no-appoint-title{
+    color: #000000;
+    padding: 20px 0;
+}
+
+.login-info-table {
+    margin-top: 20px;
+}
+td.login-info {
+    font-size: 12px;
+    cursor: pointer;
+}
+.primary-table .table thead tr th {
+    padding: 1.6rem 0;
+}
+.primary-table .table thead tr th:first-child {
+    padding-left: 10px;
+}
+.section-heading-area {
+    margin-bottom: 2rem;
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #245bcd;
+    color: white;
+    padding: 1rem 2.5rem;
+    border-radius: 0.5rem;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: #666666;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #306ee9;}

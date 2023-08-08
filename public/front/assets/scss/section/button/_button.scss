@@ -1,0 +1,43 @@
+/*-------------------------
+#.butotn
+--------------------------*/
+.primary-btn {
+     display: inline-block;
+     padding: 1rem 2rem;
+     border-radius: .5rem;
+     background: var(--primary-color);
+     font-family: $bodyFont;
+     font-size: 1.5rem;
+     font-weight: 600;
+     text-transform: capitalize;
+     color: var(--white);
+     transition: $transition;
+     border: none;
+     &:hover {
+          background: var(--hover-color);
+          color: var(--white);
+     }
+}
+.primary-btn-outline {
+     display: inline-block;
+     padding: 1.3rem 2.5rem;
+     border-radius: .5rem;
+     background: transparent;
+     font-family: $bodyFont;
+     font-size: 1.5rem;
+     font-weight: 600;
+     text-transform: capitalize;
+     color: #444444;
+     transition: $transition;
+     border: 1px solid #444444;
+     &:hover {
+          border-color: var(--hover-color);
+          background: var(--hover-color);
+          color: var(--white);
+     }
+}
+@media (max-width: 320px) {
+     .primary-btn {
+          padding: 1.4rem 2rem;
+     }
+}

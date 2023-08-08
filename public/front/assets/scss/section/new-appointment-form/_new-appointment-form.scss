@@ -1,0 +1,242 @@
+/*-------------------------
+#.new-appointment-form
+--------------------------*/
+.new-appointment-form {
+     .tab {
+          display: none;
+     }
+     .form-btn {
+          display: flex;
+          justify-content: space-between;
+          button {
+               width: 140px;
+               height: 4.8rem;
+               line-height: 4.8rem;
+               border-radius: .5rem;
+               background: var(--white);
+               text-align: center;
+               transition: $transition;
+               font-size: 1.6rem;
+               font-weight: 500;
+               text-transform: capitalize;
+               color: var(--bColor);
+               border: none;
+               &:hover {
+                    background: var(--primary-color);
+                    color: var(--white);
+               }
+          }
+     }
+     .form-progres-step {
+          display: flex;
+          justify-content: space-around;
+          overflow: hidden;
+          margin-bottom: 3rem;
+          .step {
+               position: relative;
+               z-index: 1;
+               &:last-child {
+                    &::before {
+                         display: none;
+                    }
+               }
+               span {
+                    height: 8.5rem;
+                    width: 8.5rem;
+                    line-height: 8.5rem;
+                    margin: 0 2px;
+                    background-color: #F0F5FE;
+                    border: none;  
+                    border-radius: 50%;
+                    display: inline-block;
+                    text-align: center;
+                    border: 2px solid #E3EDFF;
+                    font-family: $titlefont;
+                    font-size: 2.4rem;
+                    font-weight: 500;
+                    color: var(--color-one);
+               }
+               &:before {
+                    position: absolute;
+                    content: '';
+                    width: 300%;
+                    height: 2px;
+                    background: #E7EFFF;
+                    left: 5px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    z-index: -1;
+               }
+               &.active {
+                    span {
+                         background-color: var(--primary-color);
+                         border-color: var(--primary-color);
+                         color: var(--white);
+                    }
+               }
+               &.finish {
+                    span {
+                         background-color: var(--primary-color);
+                         border-color: var(--primary-color);
+                         color: var(--white);
+                    }
+               }
+          }
+          
+     }
+     .form-title {
+          margin-bottom: 2.5rem;
+          font-size: 2.5rem;
+          font-weight: 500;
+          text-transform: capitalize;
+          color: #2F80ED;
+     }
+     .form-inner-title {
+          margin-bottom: 1.5rem;
+          font-size: 1.8rem;
+          font-weight: 500;
+          text-transform: capitalize;
+          color: var(--color-one);
+          span {
+               color: var(--primary-color);
+          }
+     }
+     .form-group {
+          position: relative;
+          margin-bottom: 2.5rem;
+          .form-control {
+               width: 100%;
+               height: 6rem;
+               border-radius: .5rem;
+               border: none;
+               background: var(--white);
+               padding: 1rem 2rem;
+               font-family: $titlefont;
+               font-size: 1.6rem;
+               font-weight: 500;
+               color: var(--bColor);
+               &.invalid {
+                    background: #ffdddd;
+               }
+          }
+          .form-icon {
+               position: absolute;
+               top: 1.7rem;
+               right: 2rem;
+               pointer-events: none;
+          }
+          label {
+               font-size: 1.4rem;
+               font-weight: 500;
+               text-transform: capitalize;
+               color: #122F53;
+          }
+          .comment-box {
+               padding: 1.5rem 2rem;
+               height: 16rem;
+               font-weight: 400;
+          }
+     }
+     .form-check {
+          .form-check-input {
+               margin-top: 7px;
+          }
+          .form-check-label {
+               margin: 0;
+               cursor: pointer;
+               padding-left: .5rem;
+          }
+     }
+     .dectors-service-list {
+          display: flex;
+          flex-flow: row wrap;
+          column-gap: 30px;
+          .form-check {
+               margin-bottom: 2.5rem;
+               .form-check-input {
+                    margin-top: 6px;
+               }
+               .form-check-label {
+                    cursor: pointer;
+                    padding-left: 1rem;
+               }
+          }
+     }
+     .payment-method {
+          margin-bottom: 30px;
+          display: flex;
+          column-gap: 30px;
+          .form-check {
+               padding-left: 0;
+               .form-check-input {
+                    display: none;
+               }
+               .form-check-label {
+                    position: relative;
+                    margin: 0;
+                    padding: 0;
+                    padding-left: 0;
+                    &:before {
+                         position: absolute;
+                         content: "\f00c";
+                         top: -5px;
+                         right: -5px;
+                         width: 3rem;
+                         height: 3rem;
+                         line-height: 3rem;
+                         border-radius: 50%;
+                         background: #2F80ED;
+                         text-align: center;
+                         color: var(--white);
+                         opacity: 0;
+                         font-family: "Font Awesome 5 free";
+                         font-weight: 900;
+                    }
+               }
+               .form-check-input:checked ~ .form-check-label:before {
+                    opacity: 1;
+               }
+          }
+     }
+}
+
+@media (max-width: 991px) {
+     .new-appointment-form .form-progres-step .step span {
+          height: 6.5rem;
+          width: 6.5rem;
+          line-height: 6.5rem;
+          font-size: 1.8rem;
+     }
+}
+@media (max-width: 767px) {
+     .new-appointment-form .form-progres-step .step:before {
+          width: 250%;
+     }
+}
+@media (max-width: 480px) {
+     .new-appointment-form .form-progres-step .step:before {
+          width: 200%;
+     }
+     .new-appointment-form .form-title {
+          font-size: 1.4rem;
+     }
+     .new-appointment-form .form-inner-title {
+          font-size: 1.2rem;
+     }
+     .new-appointment-form .form-group .comment-box {
+          font-size: 1.4rem;
+     }
+}
+@media (max-width: 414px) {
+     .new-appointment-form .form-progres-step .step span {
+          height: 4.5rem;
+          width: 4.5rem;
+          line-height: 4.5rem;
+          font-size: 1.4rem;
+     }
+}
+@media (max-width: 320px) {
+     .new-appointment-form .form-btn button {
+          width: 115px;
+     }
+}

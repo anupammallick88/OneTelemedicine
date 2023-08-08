@@ -1,0 +1,78 @@
+/*-------------------------
+#.breadcrumb
+--------------------------*/
+.breadcrumb-area {
+     padding: 18rem 0;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     .page-title {
+          margin-bottom: 1.5rem;
+          font-size: 4rem;
+          font-weight: 600;
+          text-transform: capitalize;
+          color: var(--color-one);
+     }
+     .breadcrumb-page {
+          margin: 0;
+          padding: 0;
+          li {
+               display: inline-block;
+               position: relative;
+               margin-right: 3rem;
+               list-style: none;
+               font-size: 2rem;
+               font-weight: 700;
+               text-transform: capitalize;
+               color: var(--primary-color);
+               a {
+                    color: var(--color-one);
+                    transition: $transition;
+                    &:hover {
+                         color: var(--hover-color);
+                    }
+               }
+               &:last-child {
+                    &::before {
+                         display: none;
+                    }
+               }
+               &:before {
+                    position: absolute;
+                    content: '';
+                    width: 1rem;
+                    height: 1rem;
+                    border-radius: 50%;
+                    left: calc(100% + 15px);
+                    top: 8px;
+                    color: currentColor;
+                    background: currentColor;
+               }
+          }
+     }
+}
+@media (max-width: 991px) {
+     .breadcrumb-area {
+          padding: 12rem 0;
+     }
+}
+@media (max-width: 768px) {
+     .breadcrumb-area .page-title {          
+          font-size: 3rem;
+     }
+     .breadcrumb-area {
+          padding: 10rem 0;
+     }
+}
+@media (max-width: 375px) {
+     .breadcrumb-area .page-title {          
+          font-size: 2.6rem;
+     }
+     .breadcrumb-area .breadcrumb-page li {
+          margin-right: 2rem;
+          font-size: 1.6rem;
+     }
+     .breadcrumb-area .breadcrumb-page li::before {
+          left: calc(100% + 8px);
+     }
+}

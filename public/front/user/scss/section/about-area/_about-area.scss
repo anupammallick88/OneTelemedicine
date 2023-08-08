@@ -1,0 +1,88 @@
+/*-------------------------
+#.about-area
+--------------------------*/
+.about-area {
+     padding-left: 8.5rem;
+     .about-info {
+          .about-title {
+               margin-bottom: 2rem;
+               font-size: 4rem;
+               line-height: 6rem;
+               font-weight: 600;
+               color: var(--color-one);
+          }
+          .about-subtitle {
+               margin-bottom: 3.5rem;
+               font-size: 1.5rem;
+               line-height: 2.7rem;
+               color: var(--bColor);
+          }
+     }
+     .features-lsit {
+          padding-bottom: 1rem;
+          .single-feature {
+               margin-bottom: 3rem;
+               &:hover {
+                    .icon {
+                         background: var(--primary-color);
+                    }
+               }
+               .icon {
+                    margin-right: 1.5rem;
+                    width: 6rem;
+                    height: 6rem;
+                    line-height: 8rem;
+                    background: var(--color-one);
+                    box-shadow: 0px 0px 20px rgba(204, 201, 201, 0.25);
+                    border-radius: 5px;
+                    text-align: center;
+                    color: var(--white);
+                    transition: $transition;
+                    i {
+                         font-size: 3rem;
+                         line-height: 1.5;
+                    }
+               }
+               h4 {
+                    font-size: 1.8rem;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    color: var(--color-one);
+               }
+               p {
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    color: var(--bColor);
+               }
+          }
+     }
+}
+@media (max-width: 1300px) {
+     .about-area {
+          padding-left: 0;
+     }
+     .about-area .about-info .about-title {
+          font-size: 3.2rem;
+          line-height: 4.2rem;
+     }
+}
+@media (max-width: 767px) {
+     .about-area .about-image {
+          margin-bottom: 3rem;
+     }
+}
+@media (max-width: 480px) {
+     .about-area .about-info .about-title {
+          font-size: 2.6rem;
+          line-height: 3.6rem;
+     }
+     .about-area .features-lsit .single-feature .icon {
+          margin-right: 1rem;
+          width: 5rem;
+          height: 5rem;
+          line-height: 5.5rem;
+     }
+     .about-area .features-lsit .single-feature .icon i {
+          font-size: 2rem;
+     }
+}

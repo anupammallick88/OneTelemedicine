@@ -1,0 +1,60 @@
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;    
+    border-radius: $radius;
+}
+@mixin transform($translate-value) {
+    -webkit-transform: $translate-value;
+    -o-transform: $translate-value;
+    -moz-transform: $translate-value;
+    -ms-transform: $translate-value;    
+    transform: $translate-value;
+}
+@mixin box-shadow($shadow-value) {
+    -webkit-box-shadow: $shadow-value;
+    -o-box-shadow: $shadow-value;
+    -moz-box-shadow: $shadow-value;
+    -ms-box-shadow: $shadow-value;    
+    box-shadow: $shadow-value;
+}
+@mixin transition($transition) {
+    -webkit-transition: $transition;
+    -o-transition: $transition;
+    -moz-transition: $transition;
+    -ms-transition: $transition;    
+    transition: $transition;
+}
+@mixin background-content($repeat: no-repeat, $size: cover, $position: center center) {
+	background-repeat: $repeat;
+	background-size: $size;
+	background-position: $position;
+}
+@mixin background-color($color) {
+	background-color: $color;
+}
+@mixin overlay($opacity: $opacity) {
+    position: absolute;
+    content: " ";
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: $opacity;
+    z-index: 0;
+    z-index: -1;
+}
+@mixin flex-position($display, $contet, $items) {
+	display: $display;
+	justify-content: $contet;
+    align-items: $items;
+    flex-flow: row wrap;
+}
+
+@mixin center-position($top: $top, $left: $top) {
+  position: absolute;
+  top: $top;
+  left: $top;
+ transform: translate(-#{$top}, -#{$top});
+}

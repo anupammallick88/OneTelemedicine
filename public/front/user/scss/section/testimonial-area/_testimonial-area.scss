@@ -1,0 +1,154 @@
+/*-------------------------
+#.testimonial-area
+--------------------------*/
+.testimonial-area {
+     background: var(--bgtwo);
+     .slick-slider {
+          margin: 0 -15px;
+          .slick-slide {
+               margin: 0 15px;
+          }
+     }
+}
+.single-testimonial {
+     .clint-info {
+          .media {
+               position: relative;
+               z-index: 1;
+               margin-bottom: -47px;
+               margin-left: 2rem;
+               padding: 0 1.5rem;
+               width: 228px;
+               height: 95px;
+               background: #FFFFFF;
+               box-shadow: 0px 0px 30px rgba(203, 203, 203, 0.25);
+               border-radius: 10px;
+          }
+          .testimonial-image {
+               position: relative;
+               margin-right: 2rem;
+               &::before {
+                    position: absolute;
+                    content: '\f10f';
+                    font-family: "flaticon" ;
+                    font-size: 10px;
+                    color: var(--white);
+                    width: 2rem;
+                    height: 2rem;
+                    line-height: 1.8rem;
+                    border-radius: 50%;
+                    background: var(--primary-color);
+                    border: 1px solid #F2F2F2;
+                    text-align: center;
+                    right: -10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+               }
+               img {
+                    width: 5.5rem;
+                    height: 5.5rem;
+                    border-radius: 50%;
+               }
+          }
+          h4 {
+               margin: 0;
+               font-size: 1.6rem;
+               font-weight: 500;
+               text-transform: capitalize;
+               color: var(--color-one);
+          }
+          p {
+               font-size: 1.4rem;
+               font-weight: 400;
+               text-transform: capitalize;
+               color: var(--bColor);
+          }
+     }
+     .testimonial-info {
+          padding: 7rem 2rem 2.5rem 2rem;
+          background: var(--white);
+          border-radius: 1rem;
+          position: relative;
+          &::before {
+               position: absolute;
+               content: '\f10f';
+               font-family: "flaticon" ;
+               font-size: 6rem;
+               top: 3rem;
+               right: 3rem;
+               color: #F3F8FF;
+          }
+          h3 {
+               margin-bottom: 1rem;
+               font-size: 1.8rem;
+               font-weight: 500;
+               text-transform: capitalize;
+               color: var(--color-one);
+          }
+          p {
+               margin-bottom: 1rem;
+               font-size: 1.4rem;
+               line-height: 2.4rem;
+               color: var(--bColor);
+          }
+          .review-area {
+               margin: 0;
+               padding: 0;
+               li {
+                    display: inline-block;
+                    list-style: none;
+                    margin-right: .3rem;
+                    cursor: pointer;
+                    color: #FAAF38;
+               }
+          }
+     }
+}
+.testimonial-slide {
+     .slick-dots {
+          text-align: center;
+          margin-bottom: -10px;
+          margin-top: 25px;
+          li {
+               display: inline-block;
+               margin: 0 5px;
+               button {
+                    padding: 0;
+                    width: 1.2rem;
+                    height: 1.2rem;
+                    line-height: 1.2rem;
+                    border-radius: 50%;
+                    border: 1px solid #D5E1FB;
+                    background: #D5E1FB;
+                    font-size: 0;
+               }
+               &.slick-active {
+                    button {
+                         border-color: var(--white);
+                         background: var(--primary-color);
+                    }
+               }
+          }
+     }
+}
+
+@media (max-width: 768px) {
+     .single-testimonial .clint-info .testimonial-image img {
+          width: 4.5rem;
+          height: 4.5rem;
+     }
+     .single-testimonial .clint-info .testimonial-image {
+          margin-right: 2rem;
+     }
+     .single-testimonial .clint-info h4 {
+          font-size: 1.4rem;
+     }
+     .single-testimonial .clint-info p {
+          font-size: 1.2rem;
+     }
+     .single-testimonial .clint-info .media {
+          margin-left: 1.5rem;
+          padding: 0 1rem;
+          width: 220px;
+     }
+}

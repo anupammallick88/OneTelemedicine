@@ -1,0 +1,60 @@
+/*-------------------------
+#.secondary-tabs
+--------------------------*/
+.secondary-tabs {
+     .nav-tabs {
+          margin-bottom: 3rem;
+          border: none;
+          justify-content: space-between;
+          .nav-item {
+               margin: 0;
+               margin-bottom: 1.5rem;
+               .nav-link {
+                    padding: 0;
+                    border: none;
+                    width: 157px;
+                    padding: 1.5rem 1rem;
+                    background: #FFFFFF;
+                    border: 1px solid #EEEEEE;
+                    border-radius: 5px;
+                    text-align: center;
+                    font-family: $titlefont;
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    color: var(--color-one);
+                    &.active {
+                         color: var(--white);
+                         background: var(--primary-color);
+                    }
+               }
+          }
+     }
+}
+@media (max-width: 991px) {
+     .secondary-tabs .nav-tabs {
+          justify-content: flex-start;
+          column-gap: 2rem;
+     }
+}
+@media (max-width: 767px) {
+     .secondary-tabs .nav-tabs .nav-item  {
+          width: 30%;
+     }
+     .secondary-tabs .nav-tabs .nav-item .nav-link {
+          width: 100%;
+     }
+}
+@media (max-width: 480px) {
+     .secondary-tabs .nav-tabs .nav-item  {
+          width: 45%;
+     }
+}
+@media (max-width: 320px) {
+     .secondary-tabs .nav-tabs .nav-item  {
+          width: 100%;
+     }
+     .secondary-tabs .nav-tabs {
+          column-gap: 0;
+     }
+}

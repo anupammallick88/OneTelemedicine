@@ -1,0 +1,40 @@
+/*-------------------------
+19.pagination-area
+--------------------------*/
+.pagination-area {
+     ul {
+          margin: 0;
+          padding: 0;
+          li {
+               display: inline-block;
+               list-style: none;
+               margin-right: 5px;
+               &:last-child {
+                    margin-right: 0;
+               }
+               a {
+                    display: inline-block;
+                    width: 4rem;
+                    height: 4rem;
+                    line-height: 4.2rem;
+                    border-radius: 6px;
+                    background: transparent;
+                    text-align: center;
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    color: #666666;
+                    transition: $transition;
+                    &:hover {
+                         color: var(--white);
+                         background: var(--primary-color);
+                    }
+               }
+               &.active {
+                    a {
+                         color: var(--white);
+                         background: var(--primary-color);
+                    }
+               }
+          }
+     }
+}

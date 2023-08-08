@@ -1,0 +1,65 @@
+/*-------------------------
+#.team-area
+--------------------------*/
+.single-team {
+     margin-bottom: 3rem;
+     &:hover {
+          .team-thumbnail {
+               img {
+                    transform: scale(1.1);
+               }
+               .team-overlay {
+                    opacity: 1;
+                    visibility: visible;
+               }
+          }
+     }
+     .team-thumbnail {
+          position: relative;
+          border-radius: 1.5rem;
+          overflow: hidden;
+          img {
+               width: 100%;
+               height: auto;
+               transition: $transition;
+          }
+          .team-overlay {
+               @include flex-position(flex, center, center);
+               position: absolute;
+               width: 100%;
+               height: 100%;
+               top: 0;
+               left: 0;
+               background: rgba(51, 51, 51, .2);
+               opacity: 0;
+               visibility: hidden;
+               transition: $transition;
+          }
+     }
+     .team-info {
+          padding: 2.3rem 2rem;
+          background: var(--white);
+          box-shadow: 0px 0px 80px rgba(203, 203, 203, 0.25);
+          border-radius: 10px;
+          .team-name {
+               margin-bottom: 1rem;
+               font-size: 1.8rem;
+               font-weight: 600;
+               text-transform: capitalize;
+               color: var(--color-one);
+          }
+          ul {
+               display: flex;
+               justify-content: space-between;
+               li {
+                    line-height: 1;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    color: var(--bColor);
+               }
+               .price {
+                    color: var(--primary-color);
+               }
+          }
+     }
+}

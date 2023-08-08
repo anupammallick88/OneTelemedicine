@@ -1,0 +1,124 @@
+/*-------------------------
+#.primary-table
+--------------------------*/
+.primary-table {
+     .table {
+          width: 100%;
+          margin: 0;
+          thead {
+               tr {
+                    background: var(--white);
+                    th {
+                         padding: 1.6rem;
+                         white-space: nowrap;
+                         border: none;
+                         font-family: $titlefont;
+                         font-size: 1.5rem;
+                         font-weight: 500;
+                         color: var(--color-one);
+                         &:first-child {
+                              border-radius: 5px 0 0 5px;
+                         }
+                         &:last-child {
+                              border-radius: 0 5px 5px 0;
+                         }
+                    }
+               }
+          }
+          tbody {
+               tr {
+                    td {
+                         padding: 1.6rem;
+                         border-top: none;
+                         border-bottom: 1px solid #FFFFFF;
+                         white-space: nowrap;
+                         font-family: $titlefont;
+                         font-size: 1.5rem;
+                         font-weight: 400;
+                         color: var(--bColor);
+                         vertical-align: middle;
+                    }
+               }
+          }
+     }
+     .user-info {
+          display: flex;
+          align-items: center;
+          .user-image {
+               margin-right: 8px;
+               width: 4rem;
+               height: 4rem;
+               border-radius: 50%;
+               border: 1px solid var(--white);
+          }
+          .user-name {
+               font-family: $titlefont;
+               font-size: 1.5rem;
+               font-weight: 400;
+               color: var(--bColor);
+          }
+     }
+     .completed {
+          color: #39DC5D;
+     }
+     .prescription-btn {
+          display: inline-block;
+          padding: .7rem 1.5rem;
+          background: #39DC5D;
+          color: var(--white);
+          transition: $transition;
+          &:hover {
+               color: var(--white);
+               background: var(--hover-color);
+          }
+     }
+     .action-area {
+          margin: 0;
+          padding: 0;
+          li {
+               display: inline-block;
+               margin-right: .3rem;
+               &:last-child {
+                    margin-right: 0;
+               }
+               .action-btn {
+                    display: inline-block;
+                    width: 4.4rem;
+                    height: 4rem;
+                    line-height: 4rem;
+                    border-radius: .2rem;
+                    text-align: center;
+                    background: var(--primary-color);
+                    color: var(--white);
+                    transition: $transition;
+                    &.view-btn {
+                         background: var(--primary-color);
+                    }
+                    &.delet-btn {
+                         background: #F6563F;
+                    }
+                    &:hover {
+                         color: var(--white);
+                         background: var(--hover-color);
+                    }
+               }
+          }
+     }
+}
+@media (max-width: 991px) {
+     .primary-table .user-info .user-name {
+          font-size: 1.4rem;
+     }
+     .primary-table .table thead tr th {
+          font-size: 1.4rem;
+     }
+     .primary-table .table tbody tr td {
+          font-size: 1.4rem;
+     }
+     .primary-table .table tbody tr td:first-child {
+          min-width: 150px;
+     }
+     .primary-table .prescription-btn {
+          font-size: 1.4rem;
+     }
+}

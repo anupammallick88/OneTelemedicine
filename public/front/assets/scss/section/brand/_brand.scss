@@ -1,0 +1,13 @@
+/*-------------------------
+#.brand-area
+--------------------------*/
+.brand-area {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     background: var(--bgtwo);
+     height: 135px;
+     .sngle-brand {
+          margin: 0 1.5rem;
+     }
+}

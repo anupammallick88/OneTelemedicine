@@ -1,0 +1,93 @@
+/*-------------------------
+#.register-form
+--------------------------*/
+.register-area {
+     .register-wrap {
+          background: #F4F6FA;
+          border-radius: 1rem;
+          padding-right: 1.5rem;
+     }
+     .register-image {
+          img {
+               width: 100%;
+               height: auto;
+               border-radius: 1rem;
+          }
+     }
+}
+
+.register-form {
+     .form-title {
+          margin-bottom: 3rem;
+          font-size: 2.4rem;
+          font-weight: 700;
+          text-transform: capitalize;
+          color: var(--primary-color);
+     }
+     .form-group {
+          position: relative;
+          margin-bottom: 2rem;
+          .form-icon {
+               position: absolute;
+               left: 2rem;
+               top: 2rem;
+          }
+          .form-control {
+               width: 100%;
+               height: 6rem;
+               border: none;
+               background: #FFFFFF;
+               border-radius: 5px;
+               padding: 1rem;
+               padding-left: 5rem;
+               font-family: $titlefont;
+               font-size: 1.6rem;
+               font-weight: 500;
+               color: var(--bColor);
+          }
+     }
+     .form-check {
+          .form-check-input {
+               top: 4px;
+          }
+          .form-check-label {
+               margin: 0;
+               padding-left: 1rem;
+               font-size: $titlefont;
+               font-size: 1.4rem;
+               font-weight: 400;
+               color: var(--bColor);
+               cursor: pointer;
+          }
+     }
+     .form-bottom {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .form-bottom-text {
+               margin: 0;
+               font-family: $titlefont;
+               font-size: 1.6rem;
+               font-weight: 500;
+               color: var(--color-one);
+               a {
+                    color: var(--primary-color);
+                    transition: $transition;
+                    &:hover {
+                         color: var(--hover-color);
+                    }
+               }
+          }
+     }
+     .forget-password {
+          display: inline-block;
+          font-size: $titlefont;
+          font-size: 1.4rem;
+          font-weight: 400;
+          color: var(--bColor);
+          transition: $transition;
+          &:hover {
+               color: var(--primary-color);
+          }
+     }
+}

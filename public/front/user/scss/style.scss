@@ -1,0 +1,81 @@
+/*
+------------- Table of content ----------------
+
+Template Name: Hospital  Doctors Responsive  HTML5 Template
+Template URI: http://zainiklab.com/hospital-doctors
+Description: Hospital  Doctors Responsive  HTML5 Template
+Author: Gobinda Sarkar
+Author URI: http://zainiklab.com
+Version: 1.0
+
+---------------------- common content ----------
+#.body reset content
+#.header area
+#.footer
+#.hero-banner-area
+#.butotn
+#.about-area
+#.counter-area
+#.section-title
+#.service-area
+#.gallery-area
+#.team-area
+#.testimonial-area
+#.single-grid-blog
+#.brand-area
+#.breadcrumb
+#.pagination-area
+#.sidebar-area
+#.service-details-area
+#.blog-details-area
+#.comment-list
+#.comment-form
+#.primary-tabs
+#.accordion
+#.contact-area
+#.primary-form
+
+
+
+*/
+
+
+// variable
+@import "variable/_variable.scss";
+
+// mixin
+@import "mixin/_mixin.scss";
+
+// body reset content
+@import "reset/_predefine.scss";
+
+// component content
+@import "section/header/header";
+@import "section/footer/footer";
+@import "section/button/button";
+@import "section/hero-banner-area/hero-banner-area";
+@import "section/about-area/about-area";
+@import "section/counter-area/counter-area";
+@import "section/section-title/section-title";
+@import "section/service-area/service-area";
+@import "section/gallery-area/gallery-area";
+@import "section/team-area/team-area";
+@import "section/testimonial-area/testimonial-area";
+@import "section/blog/single-grid-blog";
+@import "section/brand/brand";
+@import "section/breadcrumb/breadcrumb";
+@import "section/pagination-area/pagination-area";
+@import "section/pagination-area/pagination";
+@import "section/sidebar-widget/sidebar-widget";
+@import "section/service-details-area/service-details-area";
+@import "section/blog/blog-details-area";
+@import "section/comment/comment-list";
+@import "section/comment/comment-form";
+@import "section/tabs/primary-tabs";
+@import "section/tabs/secondary-tabs";
+@import "section/accordion/accordion";
+@import "section/contact-area/contact-area";
+@import "section/primary-form/primary-form";
+@import "section/preloader/preloader";
+
+

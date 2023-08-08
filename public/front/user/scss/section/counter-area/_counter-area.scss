@@ -1,0 +1,116 @@
+/*-------------------------
+#.counter-area
+--------------------------*/
+.counter-area {
+     position: relative;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     margin-bottom: 8rem;
+     .single-video {
+          margin-bottom: -8rem;
+     }
+     .single-counter {
+          margin-bottom: 7rem;
+          .icon {
+               margin-right: 1.5rem;
+               width: 9rem;
+               height: 9rem;
+               line-height: 11rem;
+               border: 2px solid #FFFFFF;
+               box-sizing: border-box;
+               border-radius: 10px;
+               text-align: center;
+               color: var(--white);
+               i {
+                    font-size: 4rem;
+                    line-height: 1;
+               }
+          }
+          h2 {
+               margin-bottom: 1rem;
+               font-size: 4rem;
+               line-height: 1;
+               font-weight: 700;
+               color: #FFCC52;
+          }
+          p {
+               font-size: 2.4rem;
+               line-height: 1;
+               font-weight: 400;
+               text-transform: capitalize;
+               color: var(--white);
+          }
+     }
+}
+.single-video {
+     position: relative;
+     border-radius: 1rem;
+     img {
+          width: 100%;
+          height: auto;
+     }
+     .video-btn {
+          position: absolute;
+          right: 3rem;
+          bottom: 3rem;
+          text-align: center;
+          border-radius: 50%;
+          width: 5rem;
+          height: 5rem;
+          line-height: 5rem;
+          background: var(--white);
+          color: var(--primary-color);
+          box-shadow: 0 0 0 1rem rgba(255, 255, 255, 0.39);
+          animation: pulse 5s linear 2s infinite alternate;
+          transition: $transition;
+          &:hover {
+               background: var(--primary-color);
+               color: var(--white);
+          }
+     }
+}
+@keyframes pulse {
+     0%   {
+          box-shadow: 0 0 0 1rem rgba(255, 255, 255, 0.39);
+     }
+     25%  {
+          box-shadow: 0 0 0 .6rem rgba(255, 255, 255, 0.30);
+     }
+     50%  {
+          box-shadow: 0 0 0 .5rem rgba(255, 255, 255, 0.15);
+     }
+     75%  {
+          box-shadow: 0 0 0 .8rem rgba(255, 255, 255, 0.26);
+     }
+     100% {
+          box-shadow: 0 0 0 1rem rgba(255, 255, 255, 0.39);
+     }
+}
+@media (max-width: 1199px) {
+     .counter-area {
+          margin-bottom: 0;
+     }
+     .counter-area .single-video {
+          margin-bottom: 0;
+     }
+     .counter-area .single-counter p {
+          font-size: 1.8rem;
+     }
+     .counter-area .single-counter h2 {
+          font-size: 3rem;
+     }
+     .counter-area .single-counter .icon {
+          width: 7rem;
+          height: 7rem;
+          line-height: 10rem;
+     }
+}
+@media (max-width: 991px) {
+     .counter-area .single-video {
+          margin-bottom: 3rem;
+     }
+     .counter-area .single-counter {
+          margin-bottom: 6rem;
+     }
+}

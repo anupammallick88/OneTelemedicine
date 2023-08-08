@@ -1,0 +1,71 @@
+/*
+------------- Table of content ----------------
+
+Template Name: Hospital  Doctors Responsive  HTML5 Template
+Template URI: http://zainiklab.com/hospital-doctors
+Description: Hospital  Doctors Responsive  HTML5 Template
+Author: Gobinda Sarkar
+Author URI: http://zainiklab.com
+Version: 1.0
+
+---------------------- common content ----------
+#.body reset content
+#.header area
+#.footer
+#.butotn
+#.brand-area
+#.breadcrumb
+#.register-form
+#.section-header
+#.dashboard-box
+#.primary-table
+#.section-heading
+#.tabs
+#.pagination
+#.new-appointment-form
+#.primary-form
+#.profile-area
+#.secondary-form
+#.prescriptionmodal
+
+
+
+*/
+
+
+// variable
+@import "variable/_variable.scss";
+
+// mixin
+@import "mixin/_mixin.scss";
+
+// body reset content
+@import "reset/_predefine.scss";
+
+// component content
+@import "section/header/header";
+@import "section/footer/footer";
+@import "section/button/button";
+@import "section/brand/brand";
+@import "section/breadcrumb/breadcrumb";
+@import "section/preloader/preloader";
+@import "section/register-form/register-form";
+@import "section/section-header/section-header";
+@import "section/section-header/section-inner-header";
+@import "section/dashboard-box/dashboard-box";
+@import "section/table/primary-table";
+@import "section/section-heading/section-heading";
+@import "section/tabs/tabs";
+@import "section/pagination/pagination";
+@import "section/modal/appoinmentmodal";
+@import "section/table/appoinment-table";
+@import "section/new-appointment-form/new-appointment-form";
+@import "section/team-area/team-area";
+@import "section/primary-form/primary-form";
+@import "section/modal/editeprofilemodal";
+@import "section/profile-area/profile-area";
+@import "section/secondary-form/secondary-form";
+@import "section/modal/prescriptionmodal";
+@import "section/table/secondary-table";
+
+

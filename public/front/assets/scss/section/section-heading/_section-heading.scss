@@ -1,0 +1,12 @@
+/*-------------------------
+#.section-heading
+--------------------------*/
+.section-heading-area {
+     margin-bottom: 3rem;
+     .section-title {
+          font-size: 1.8rem;
+          font-weight: 600;
+          text-transform: capitalize;
+          color: var(--primary-color);
+     }
+}

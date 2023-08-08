@@ -1,0 +1,128 @@
+/*-------------------------
+#.single-grid-blog
+--------------------------*/
+.single-grid-blog {
+     margin-bottom: 3rem;
+     background: var(--white);
+     .blog-thumbnail {
+          img {
+               width: 100%;
+               height: auto;
+               border-radius: 1.5rem;
+          }
+     }
+     .blog-info {
+          padding: 2.3rem 2rem;
+          background: #FFFFFF;
+          box-shadow: 0px 0px 80px rgba(203, 203, 203, 0.25);
+          border-radius: 15px;
+          .blog-title {
+               margin-bottom: 1.5rem;
+               font-size: 2rem;
+               font-weight: 500;
+               text-transform: capitalize;
+               color: var(--color-one);
+               a {
+                    color: var(--color-one);
+                    transition: $transition;
+                    &:hover {
+                         color: var(--primary-color);
+                    }
+               }
+          }
+          .blog-meta {
+               margin: 0;
+               margin-bottom: 1.3rem;
+               padding: 0;
+               li {
+                    font-family: $titlefont;
+                    display: inline-block;
+                    list-style: none;
+                    margin: 0;
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    color: var(--color-one);
+                    margin-right: 2.5rem;
+                    &:last-child {
+                         margin-right: 0;
+                    }
+                    i {
+                         position: relative;
+                         top: .2rem;
+                         margin-right: .5rem;
+                         color: var(--primary-color);
+                    }
+               }
+               .author-info {
+                    display: flex;
+                    align-items: center;
+                    .author-image {
+                         width: 4rem;
+                         height: 4rem;
+                         line-height: 4rem;
+                         border-radius: 50%;
+                         margin-right: 1.5rem;
+                    }
+                    .author-name {
+                         margin: 0;
+                         font-size: 1.6rem;
+                         font-weight: 500;
+                         text-transform: capitalize;
+                         color: var(--color-one);
+                    }
+               }
+          }
+          .blog-content {
+               margin-bottom: 1rem;
+               font-size: 1.5rem;
+               line-height: 2.7rem;
+               font-weight: 400;
+               color: var(--color-one);
+          }
+          .redmore-btn {
+               display: inline-block;
+               font-size: 1.5rem;
+               font-weight: 600;
+               text-transform: capitalize;
+               color: var(--primary-color);
+               transition: $transition;
+               &:hover {
+                    color: var(--hover-color);
+               }
+          }
+     }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.single-grid-blog .blog-info .blog-meta .author-info .author-image {
+          display: none;
+     }
+     .single-grid-blog .blog-info .blog-meta .author-info .author-image {
+          margin-right: .5rem;
+     }
+     .single-grid-blog .blog-info .blog-meta .author-info .author-name {
+          font-size: 1.4rem;
+     }
+     .single-grid-blog .blog-info .blog-meta li {
+          font-size: 1.4rem;
+          margin-right: 1rem;
+     }
+}
+@media (max-width: 414px) {
+     .single-grid-blog .blog-info .blog-meta .author-info .author-image {
+          display: none;
+     }
+     .single-grid-blog .blog-info .blog-meta .author-info .author-image {
+          margin-right: .5rem;
+     }
+     .single-grid-blog .blog-info .blog-meta .author-info .author-name {
+          font-size: 1.4rem;
+     }
+     .single-grid-blog .blog-info .blog-meta li {
+          font-size: 1.4rem;
+          margin-right: 1rem;
+     }
+     .single-grid-blog .blog-info .blog-title {
+          font-size: 1.8rem;
+     }
+}

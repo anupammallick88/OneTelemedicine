@@ -1,0 +1,94 @@
+.section-inner-header {
+     .appoinment-search {
+          .search-input {
+               position: relative;
+               margin-right: 2rem;
+               .form-control {
+                    width: 245px;
+                    height: 45px;
+                    border: none;
+                    background: var(--white);
+                    border-radius: .5rem;
+                    padding: 1rem;
+                    padding-left: 3rem;
+                    font-family: $titlefont;
+                    font-size: 1.4rem;
+                    font-weight: 400;
+                    color: var(--bColor);
+               }
+               .search-btn {
+                    position: absolute;
+                    left: 1rem;
+                    top: 1rem;
+                    padding: 0;
+                    border: none;
+                    background: transparent;
+                    color: var(--bColor);
+                    font-size: 1.4rem;
+               }
+          }
+          .date-input {
+               position: relative;
+               .form-control {
+                    width: 165px;
+                    height: 45px;
+                    border: none;
+                    background: var(--white);
+                    border-radius: .5rem;
+                    padding: 1rem;
+                    font-family: $titlefont;
+                    font-size: 1.4rem;
+                    font-weight: 400;
+                    color: var(--bColor);
+               }
+               .form-icon {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    width: 45px;
+                    height: 45px;
+                    line-height: 45px;
+                    text-align: center;
+                    border-left: 1px solid #EBEEFF;
+                    pointer-events: none;
+               }
+          }
+          .input-wrap {
+               display: flex;
+               justify-content: flex-end;
+          }
+     }
+}
+@media (max-width: 991px) {
+     .section-inner-header .appoinment-search .input-wrap {
+          justify-content: flex-start;
+          margin-bottom: 3rem;
+          flex-flow: row wrap;
+     }
+     .section-heading-area .section-title {
+          margin-bottom: 1.5rem;
+     }
+}
+
+@media (max-width: 575px) {
+     .section-inner-header .appoinment-search .search-input {
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 2rem;
+     }
+     .section-inner-header .appoinment-search .date-input {
+          width: 100%;
+     }
+     .section-inner-header .appoinment-search .search-input .form-control {
+          width: 100%;
+     }
+     .section-inner-header .appoinment-search .date-input .form-control {
+          width: 100%;
+     }
+}
+@media (max-width: 414px) {
+     .inner-tabs-menu .nav-tabs .nav-item {
+          width: 100%;
+          text-align: center;
+     }
+}

@@ -1,0 +1,35 @@
+.comment-form {
+     .form-title {
+          margin-bottom: 2.5rem;
+          padding-bottom: 1.5rem;
+          font-size: 2.4rem;
+          font: 500;
+          text-transform: capitalize;
+          color: var(--color-one);
+          border-bottom: 3px solid #F7F7F7;
+     }
+     .form-group {
+          margin-bottom: 2rem;
+          label {
+               font-family: $titlefont;
+               font-size: 1.4rem;
+               font-weight: 500;
+               color: var(--color-one);
+          }
+          .form-control {
+               width: 100%;
+               height: 5.6rem;
+               background: #F9F9FB;
+               border-radius: .5rem;
+               border: none;
+               padding: 1rem 1.5rem;
+               font-family: $titlefont;
+               font-size: 1.4rem;
+               font-weight: 400;
+               color: var(--bColor);
+          }
+          .comment-box {
+               height: 14rem;
+          }
+     }
+}

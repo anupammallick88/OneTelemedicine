@@ -1,0 +1,89 @@
+.pagination {
+     .pagination-wrap {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          position: relative;
+          width: 100%;
+          background: #F7F7F7;
+          border: 1px solid #F9F9FB;
+          box-sizing: border-box;
+          border-radius: 10px;
+          height: 12rem;
+          padding: 1rem 2rem;
+          &::before {
+               position: absolute;
+               content: '';
+               height: 100%;
+               width: 1px;
+               background: #EBE3E3;
+               top: 0;
+               left: 50%;
+          }
+          li {
+               width: 50%;
+               a {
+                    display: block;
+                    span {
+                         font-size: 1.6rem;
+                         font-weight: 400;
+                         text-transform: capitalize;
+                         color: var(--color-one);
+                         i {
+                              position: relative;
+                              top: 2px;
+                              color: var(--primary-color);
+                              font-size: 1.8rem;
+                              &::before  {
+                                   font-weight: 700;
+                              }
+                         }
+                    }
+                    h4 {
+                         margin-top: .5rem;
+                         font-family: $bodyFont;
+                         font-size: 1.8rem;
+                         font-weight: 600;
+                         text-transform: capitalize;
+                         color: var(--color-one);
+                    }
+                    &:hover {
+                         span {
+                              color: var(--primary-color);
+                         }
+                         h4 {
+                              color: var(--primary-color);
+                         }
+                    }
+               }
+               &.next {
+                    text-align: right;
+               }
+          }
+     }
+}
+
+@media (max-width: 1199px) {
+     .pagination .pagination-wrap li a span {
+          font-size: 1.4rem;
+     }
+     .pagination .pagination-wrap li a h4 {
+          font-size: 1.4rem;
+     }
+}
+@media (max-width: 375px) {
+     .pagination .pagination-wrap li a span {
+          font-size: 1.2rem;
+     }
+     .pagination .pagination-wrap li a span i {
+          font-size: 1.4rem;
+     }
+     .pagination .pagination-wrap li a h4 {
+          font-size: 1.2rem;
+          line-height: 1.6rem;
+     }
+     .pagination .pagination-wrap {
+          height: 10rem;
+          padding: 1rem ;
+     }
+}

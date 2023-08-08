@@ -1,0 +1,72 @@
+/*-------------------------
+#.primary-tabs
+--------------------------*/
+.primary-tabs {
+     .nav-tabs {
+          margin-bottom: 3rem;
+          border: none;
+          justify-content: space-between;
+          .nav-item {
+               margin: 0;
+               margin-bottom: 1.5rem;
+               .nav-link {
+                    padding: 0;
+                    border: none;
+                    width: 250px;
+                    padding: 3rem;
+                    background: #FFFFFF;
+                    box-shadow: 0px 0px 80px rgba(203, 203, 203, 0.25);
+                    border-radius: 10px;
+                    text-align: center;
+                    font-family: $titlefont;
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    color: var(--color-one);
+                    &.active {
+                         color: var(--white);
+                         background: var(--primary-color);
+                    }
+               }
+          }
+     }
+     .section-inner-title {
+          margin-bottom: 3rem;
+          font-size: 2.4rem;
+          font-weight: 600;
+          text-transform: capitalize;
+          color: var(--color-one);
+     }
+}
+@media (max-width: 1199px) {
+     .primary-tabs .nav-tabs .nav-item .nav-link {
+          width: 220px;
+          padding: 2rem;
+     }
+}
+@media (max-width: 991px) {
+     .primary-tabs .nav-tabs .nav-item .nav-link {
+          width: auto;
+     }
+     .primary-tabs .nav-tabs .nav-item {
+          width: 31%;
+          margin-right: 1%;
+     }
+}
+@media (max-width: 767px) {
+     .primary-tabs .nav-tabs .nav-item {
+          width: 48%;
+     }
+}
+@media (max-width: 414px) {
+     .primary-tabs .nav-tabs .nav-item .nav-link {
+          padding: 2rem 1rem;
+          font-size: 1.4rem;
+     }
+}
+@media (max-width: 375px) {
+     .primary-tabs .nav-tabs .nav-item {
+          margin-right: 0;
+          width: 100%;
+     }
+}

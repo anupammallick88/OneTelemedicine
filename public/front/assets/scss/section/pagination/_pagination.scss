@@ -1,0 +1,39 @@
+/*-------------------------
+#.pagination
+--------------------------*/
+.pagination {
+     display: flex;
+     justify-content: space-between;
+     .page-btn {
+          width: 140px;
+          height: 4.8rem;
+          line-height: 4.8rem;
+          border-radius: .5rem;
+          background: var(--white);
+          text-align: center;
+          transition: $transition;
+          font-size: 1.6rem;
+          font-weight: 500;
+          text-transform: capitalize;
+          color: var(--bColor);
+          &.previous {
+               i {
+                    margin-right: .5rem;
+               }
+          }
+          &.next {
+               i {
+                    margin-left: .5rem;
+               }
+          }
+          &:hover {
+               background: var(--primary-color);
+               color: var(--white);
+          }
+     }
+}
+@media (max-width: 375px) {
+     .pagination .page-btn {
+          width: 120px;
+     }
+}

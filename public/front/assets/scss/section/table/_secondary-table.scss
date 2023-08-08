@@ -1,0 +1,38 @@
+.secondary-table {
+     .table {
+          border: 1px solid var(--white);
+          width: 100%;
+          margin: 0;
+          thead {
+               tr {
+                    background: var(--white);
+                    th {
+                         padding: 1.3rem 1.6rem;
+                         border-top: none;
+                         border: 1px solid var(--white);
+                         white-space: nowrap;
+                         font-family: $titlefont;
+                         font-size: 1.4rem;
+                         font-weight: 500;
+                         color: var(--color-one);
+                         vertical-align: middle;
+                    }
+               }
+          }
+          tbody {
+               tr {
+                    td {
+                         padding: 1.3rem 1.6rem;
+                         border-top: none;
+                         border: 1px solid var(--white);
+                         white-space: nowrap;
+                         font-family: $titlefont;
+                         font-size: 1.4rem;
+                         font-weight: 400;
+                         color: var(--bColor);
+                         vertical-align: middle;
+                    }
+               }
+          }
+     }
+}

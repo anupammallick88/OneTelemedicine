@@ -1,0 +1,398 @@
+
+    .dt-buttons.btn-group.flex-wrap {
+        position: absolute;
+        left: 40%;
+        transform: translateX(-40%);
+        z-index: 9;
+
+    }
+
+    div#users-table_wrapper {
+        position: relative;
+    }
+
+    div#users-table_length {
+        display: inline-block;
+    }
+
+    div#users-table_filter {
+        display: inline-block;
+        float: right;
+    }
+
+    a.dt-button.dropdown-item.buttons-columnVisibility.active {
+        color: #333;
+    }
+
+    a.dt-button.dropdown-item.buttons-columnVisibility {
+        color: #ddd;
+    }
+
+    div#users-table_info {
+        display: inline-block;
+    }
+
+    div#users-table_paginate {
+        display: inline-block;
+        float: right;
+    }
+
+    .bootstrap-tagsinput {
+        width: 100%;
+    }
+
+    /*custome css */
+select.form-control {
+    height: 45px;
+    border-radius: 0;
+}
+.form-control {
+    height: 45px;
+    border-radius: 0;
+}
+.custom-file .custom-file-label {
+    height: 45px;
+    border-radius: 0;
+    line-height: 32px;
+}
+.custom-file .custom-file-label::after {
+    height: 45px;
+    line-height: 32px;
+}
+.card .card-body .dataTables_wrapper .dataTable {
+    margin-left:  0;
+    width: 100% !important;
+}
+.card .card-body .dataTables_wrapper .dataTable .table-actions a {
+    display: inline-block;
+    font-size: 20px;
+    margin: 0 5px;
+    transition: all .5s;
+}
+.card .card-body .dataTables_wrapper .dataTable .table-actions a:hover {
+    color: #007bff;
+}
+.card .card-body .dataTables_wrapper .dataTable img {
+    object-fit: contain;
+}
+.card .card-body .dataTables_wrapper .dataTables_paginate .pagination .page-item .page-link {
+    transition: all .5s;
+    min-width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.card .card-body .dataTables_wrapper .dataTables_paginate .pagination .page-item .page-link:hover {
+    background: #007bff;
+    color: #ffffff;
+}
+
+.custome-form .col-form-label {
+    font-family: 'Nunito Sans';
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.custome-form .form-group label {
+    font-size: 14px;
+    text-transform: capitalize;
+    font-family: 'Nunito Sans';
+    font-weight: 400;
+}
+.custome-form .form-group input {
+    width: 100%;
+    height: 45px;
+    padding: 5px 15px;
+    font-family: 'Nunito Sans';
+    font-weight: 400;
+    font-size: 14px;
+    border-radius: 0;
+    border:  1px solid #eaeaea;
+}
+.custome-form .form-group select {
+    width: 100%;
+    height: 45px;
+    padding: 5px 15px;
+    font-family: 'Nunito Sans';
+    font-weight: 400;
+    font-size: 14px;
+    border-radius: 0;
+    border:  1px solid #eaeaea;
+    background: url("data:image/svg+xml,<svg height='10px' width='10px' viewBox='0 0 16 16' fill='%23000000' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>") no-repeat 97.5%;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.btn {
+    height: 45px;
+    line-height: 35px;
+    padding: 6px 30px;
+}
+.custome-form .checkbox-list {
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 15px;
+    row-gap:  10px;
+}
+.table td, .table th {
+    vertical-align: middle;
+}
+.card .card-header h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+.custom-file {
+    margin-bottom: 30px;
+}
+.form-group select.form-control {
+    width: 100%;
+    height: 45px;
+    padding: 5px 15px;
+    font-family: 'Nunito Sans';
+    font-weight: 400;
+    font-size: 14px;
+    border-radius: 0;
+    border:  1px solid #eaeaea;
+}
+
+.select2.select2-container--default .select2-selection--single {
+    height: 45px;
+    line-height: 45px;
+    border-radius: 0;
+}
+.select2.select2-container--default .select2-selection--single .select2-selection__rendered {
+    height: 45px;
+    line-height: 45px;
+    border-radius: 0;
+}
+.bootstrap-tagsinput {
+    width: 100%;
+    height: 45px;
+    padding: 5px 15px;
+    font-family: 'Nunito Sans';
+    font-weight: 400;
+    font-size: 14px;
+    border-radius: 0;
+    border:  1px solid #eaeaea;
+}
+.btn-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 0;
+    line-height: 40px;
+}
+.custom-file-input {
+    width: 100%;
+    height: 45px;
+    padding: 5px 15px;
+    font-family: 'Nunito Sans';
+    font-weight: 400;
+    font-size: 14px;
+    border-radius: 0;
+    border:  1px solid #eaeaea;
+}
+.wrapper .header-top .top-menu .header-search .input-group .input-group-addon {
+    position: relative;
+    top: 11px;
+}
+.wrapper .page-wrap .app-sidebar.colored .sidebar-content .nav-container .navigation-main .nav-item a {
+    margin-bottom: 10px;
+}
+.table tbody td {
+    white-space: nowrap;
+}
+.table thead th {
+    white-space: nowrap;
+}
+.new-cust-card h6 {
+    margin-top: 12px;
+}
+.all-slots .single-slots {
+    margin-bottom: 15px;
+}
+.all-slots .single-slots:last-child {
+    margin-bottom: 0;
+}
+.all-slots .single-slots p {
+    margin-bottom: 0;
+}
+.note-popover.popover {
+    display: none;
+}
+label {
+    display: block;
+}
+.card .card-body .form-group .select2 {
+    width: 100% !important;
+}
+@media (max-width: 1600px) {
+
+    .dt-buttons.btn-group.flex-wrap {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        transform: translateX(0);
+        z-index: 9;
+        top: 0;
+    }
+    div#users-table_length {
+        margin-top: 60px;
+    }
+    div#users-table_filter {
+        margin-top: 60px;
+    }
+}
+@media (max-width:  1120px) {
+    .dt-buttons.btn-group.flex-wrap .btn {
+        padding: 6px 20px;
+    }
+}
+@media (max-width:  992px) {
+    .ik-x:before {
+        display: none;
+    }
+}
+@media (max-width:  991px) {
+    .wrapper .header-top .top-menu .mobile-nav-toggle span {
+        top: 19px;
+        left: 10px;
+    }
+    .ik-x:before {
+        display: none;
+    }
+}
+@media (max-width:  800px) {
+    .dt-buttons.btn-group.flex-wrap .btn {
+        padding: 6px 10px;
+    }
+}
+@media (max-width:  767px) {
+    .hide-mobile {
+        display: none;
+    }
+}
+@media (max-width: 575px) {
+    .card .card-body .dt-buttons.btn-group.flex-wrap {
+        display: none !important;
+    }
+    div#users-table_length {
+        margin-top: 7px;
+    }
+    div#users-table_filter {
+        margin-top: 0;
+    }
+    div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+        flex-flow: row wrap;
+    }
+    .pagination .page-item {
+        padding: 3px;
+    }
+    .card .card-body .dataTables_wrapper .dataTables_paginate .pagination .page-item .page-link {
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .card {
+        /* background: transparent; */
+        box-shadow: none;
+    }
+    .card.p-3 {
+        padding: 0 !important;
+    }
+    .card .card-body {
+        /* padding: 0; */
+    }
+}
+@media (max-width: 414px) {
+    div#users-table_filter {
+        float: left;
+    }
+}
+
+.wh-90-45 {
+    width: 90px;
+    height: 45px;
+}
+
+.doc-img-cls {
+    width: 200px;
+    height:200px;
+    border-radius:50%;
+    object-fit: cover;
+}
+
+.cus-mh50-mw-50 {
+    height: 50px;
+    width: 50px;
+}
+
+.cus-mw-200 {
+    max-width: 200px;
+}
+
+.cus-card-img {
+    object-fit: contain;
+    height: 300px;
+}
+
+.print-page {
+    margin: 20px;
+}
+
+.form-group select.cus-w90-h45 {
+    width: 90px;
+    height: 45px;
+}
+
+.form-group select.cus-w90 {
+    width: 90px;
+}
+
+.cus-menu-w{
+    width: calc(100% - 50px);
+}
+
+.cus-site-create-logo{
+    max-width:100px;
+    padding-right: 10px;
+}
+.cus-user-edit-img {
+    width: 200px;
+    height:200px;
+    border-radius:50%
+}
+.form-group-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dt-table-processing {
+    font-size:60px;
+    margin-top:50px;
+}
+
+.wdh-90 {
+    width: 90px;
+}
+.wdh-90-70 {
+    width: 90px;
+    height: 70px;
+}
+@media (max-width: 1500px) {
+    .form-group-wrap {
+        flex-direction: column;
+    }
+}
+@media (max-width: 991px) {
+    .form-group-wrap {
+        flex-direction: row;
+    }
+}
+@media (max-width: 320px) {
+    .form-group-wrap {
+        flex-direction: column;
+    }
+}

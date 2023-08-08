@@ -1,0 +1,46 @@
+/*-------------------------
+#.dashboard-box
+--------------------------*/
+.dashboard-box {
+     .single-box {
+          margin-bottom: 3rem;
+          padding: 1rem;
+          background: #FFFFFF;
+          border-radius: 10px;
+          .box-image {
+               width: 5.6rem;
+               height: 5.6rem;
+               border-radius: .5rem;
+          }
+          .counter-title {
+               font-size: 1.6rem;
+               font-weight: 500;
+               text-transform: capitalize;
+               color: var(--color-one);
+          }
+          .counter {
+               margin-bottom: 0;
+               font-size: 2.4rem;
+               line-height: 1;
+               font-weight: 600;
+               color: #2F80ED;
+          }
+          .color-two {
+               color: #F5B033;
+          }
+          .color-three {
+               color: #1FB540;
+          }
+          .color-four {
+               color: #005B92;
+          }
+     }
+}
+@media (max-width: 1199px) {
+     .dashboard-box .single-box .counter-title {
+          font-size: 1.4rem;
+     }
+     .dashboard-box .single-box .counter {
+          font-size: 2rem;
+     }
+}

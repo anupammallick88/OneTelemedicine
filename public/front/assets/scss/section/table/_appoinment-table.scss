@@ -1,0 +1,29 @@
+.appoinment-table {
+     .table {
+          border: 1px solid var(--white);
+          width: 100%;
+          margin: 0;
+          tbody {
+               tr {
+                    td {
+                         padding: 1.3rem 1.6rem;
+                         border-top: none;
+                         border: 1px solid var(--white);
+                         white-space: nowrap;
+                         font-family: $titlefont;
+                         font-size: 1.4rem;
+                         font-weight: 400;
+                         color: var(--bColor);
+                         vertical-align: middle;
+                    }
+                    &:nth-child(odd) {
+                         td {
+                              font-size: 1.4rem;
+                              font-weight: 500;
+                              color: #122F53;
+                         }
+                    }
+               }
+          }
+     }
+}
